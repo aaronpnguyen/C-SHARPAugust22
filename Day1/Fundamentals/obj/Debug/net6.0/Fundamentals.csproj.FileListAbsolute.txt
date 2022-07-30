@@ -1,0 +1,15 @@
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\bin\Debug\net6.0\Fundamentals.exe
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\bin\Debug\net6.0\Fundamentals.deps.json
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\bin\Debug\net6.0\Fundamentals.runtimeconfig.json
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\bin\Debug\net6.0\Fundamentals.dll
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\bin\Debug\net6.0\Fundamentals.pdb
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.csproj.AssemblyReference.cache
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.AssemblyInfoInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.AssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.csproj.CoreCompileInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.dll
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\refint\Fundamentals.dll
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.pdb
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\Fundamentals.genruntimeconfig.cache
+D:\Coding Dojo\Bootcamp\C#\Day1\Fundamentals\obj\Debug\net6.0\ref\Fundamentals.dll
