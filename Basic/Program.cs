@@ -94,21 +94,21 @@
                 }
             }
 
-            static object[] NumToString(object[] numbers) {
+            static object[] NumToString(int[] numbers) {
+                object[] objects = new object[numbers.Length];
                 for(int i = 0; i < numbers.Length; i++) {
-                    if ((int)numbers[i] < 0) {
-                        numbers[i] = "Dojo";
-                    }
-                Console.WriteLine(numbers[i]);
+                    if (numbers[i] < 0) objects[i] = "Dojo";
+                    else objects[i] = numbers[i];
+                    Console.WriteLine(objects[i]);
                 }
-                return numbers;
+                return objects;
             }
 
             PrintNumbers();
             PrintOdds();
             PrintSum();
             int[] arr = {-1, -3, 2, 5, 2, 3, 1, 9 -10, 5};
-            object[] arrObj = {-1, -3, 2};
+            int[] arrObj = {-1, -3, 2};
             LoopArray(arr);
             FindMax(arr);
             Console.WriteLine(FindMax(arr));
