@@ -1,0 +1,15 @@
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\bin\Release\net6.0\HelloWorld.exe
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\bin\Release\net6.0\HelloWorld.deps.json
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\bin\Release\net6.0\HelloWorld.runtimeconfig.json
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\bin\Release\net6.0\HelloWorld.dll
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\bin\Release\net6.0\HelloWorld.pdb
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.csproj.AssemblyReference.cache
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.AssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.dll
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\refint\HelloWorld.dll
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.pdb
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\HelloWorld.genruntimeconfig.cache
+D:\Coding Dojo\Bootcamp\C#\HelloWorld\obj\Release\net6.0\ref\HelloWorld.dll

@@ -1,0 +1,15 @@
+D:\Coding Dojo\Bootcamp\C#\datastrucs\bin\Debug\net6.0\datastrucs.exe
+D:\Coding Dojo\Bootcamp\C#\datastrucs\bin\Debug\net6.0\datastrucs.deps.json
+D:\Coding Dojo\Bootcamp\C#\datastrucs\bin\Debug\net6.0\datastrucs.runtimeconfig.json
+D:\Coding Dojo\Bootcamp\C#\datastrucs\bin\Debug\net6.0\datastrucs.dll
+D:\Coding Dojo\Bootcamp\C#\datastrucs\bin\Debug\net6.0\datastrucs.pdb
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.csproj.AssemblyReference.cache
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.AssemblyInfoInputs.cache
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.AssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.csproj.CoreCompileInputs.cache
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.dll
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\refint\datastrucs.dll
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.pdb
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\datastrucs.genruntimeconfig.cache
+D:\Coding Dojo\Bootcamp\C#\datastrucs\obj\Debug\net6.0\ref\datastrucs.dll
