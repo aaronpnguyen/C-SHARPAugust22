@@ -1,0 +1,15 @@
+D:\Coding Dojo\Bootcamp\C#\Boxing\bin\Debug\net6.0\Boxing.exe
+D:\Coding Dojo\Bootcamp\C#\Boxing\bin\Debug\net6.0\Boxing.deps.json
+D:\Coding Dojo\Bootcamp\C#\Boxing\bin\Debug\net6.0\Boxing.runtimeconfig.json
+D:\Coding Dojo\Bootcamp\C#\Boxing\bin\Debug\net6.0\Boxing.dll
+D:\Coding Dojo\Bootcamp\C#\Boxing\bin\Debug\net6.0\Boxing.pdb
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.csproj.AssemblyReference.cache
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.AssemblyInfoInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.AssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.csproj.CoreCompileInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.dll
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\refint\Boxing.dll
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.pdb
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\Boxing.genruntimeconfig.cache
+D:\Coding Dojo\Bootcamp\C#\Boxing\obj\Debug\net6.0\ref\Boxing.dll
