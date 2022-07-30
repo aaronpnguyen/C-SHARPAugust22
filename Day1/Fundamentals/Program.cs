@@ -1,8 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Random random = new Random();
-
-static void count() {
+﻿static void count() {
     int i = 1;
     while (i <= 255) {
         Console.WriteLine(i);
