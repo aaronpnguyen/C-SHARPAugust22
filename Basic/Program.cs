@@ -7,6 +7,10 @@
                 }
             }
 
+            Console.WriteLine(1);
+            Console.WriteLine(2);
+            Console.WriteLine(3);
+
             static void PrintOdds() {
                 for (int i = 1; i <= 255; i++) {
                     if (i % 2 != 0) Console.WriteLine(i);
