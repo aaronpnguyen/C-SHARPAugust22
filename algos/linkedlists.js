@@ -84,7 +84,6 @@
             runner = runner.next;
         }
         runner.next = newNode;
-        this.length++;
         return this
     }
   
