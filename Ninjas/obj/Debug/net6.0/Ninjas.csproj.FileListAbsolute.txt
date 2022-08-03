@@ -1,0 +1,15 @@
+D:\Coding Dojo\Bootcamp\C#\Ninjas\bin\Debug\net6.0\Ninjas.exe
+D:\Coding Dojo\Bootcamp\C#\Ninjas\bin\Debug\net6.0\Ninjas.deps.json
+D:\Coding Dojo\Bootcamp\C#\Ninjas\bin\Debug\net6.0\Ninjas.runtimeconfig.json
+D:\Coding Dojo\Bootcamp\C#\Ninjas\bin\Debug\net6.0\Ninjas.dll
+D:\Coding Dojo\Bootcamp\C#\Ninjas\bin\Debug\net6.0\Ninjas.pdb
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.csproj.AssemblyReference.cache
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.AssemblyInfoInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.AssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.csproj.CoreCompileInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.dll
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\refint\Ninjas.dll
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.pdb
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\Ninjas.genruntimeconfig.cache
+D:\Coding Dojo\Bootcamp\C#\Ninjas\obj\Debug\net6.0\ref\Ninjas.dll

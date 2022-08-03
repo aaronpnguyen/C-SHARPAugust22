@@ -1,0 +1,15 @@
+D:\Coding Dojo\Bootcamp\C#\Deck\bin\Debug\net6.0\Deck.exe
+D:\Coding Dojo\Bootcamp\C#\Deck\bin\Debug\net6.0\Deck.deps.json
+D:\Coding Dojo\Bootcamp\C#\Deck\bin\Debug\net6.0\Deck.runtimeconfig.json
+D:\Coding Dojo\Bootcamp\C#\Deck\bin\Debug\net6.0\Deck.dll
+D:\Coding Dojo\Bootcamp\C#\Deck\bin\Debug\net6.0\Deck.pdb
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.csproj.AssemblyReference.cache
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.AssemblyInfoInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.AssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.csproj.CoreCompileInputs.cache
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.dll
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\refint\Deck.dll
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.pdb
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\Deck.genruntimeconfig.cache
+D:\Coding Dojo\Bootcamp\C#\Deck\obj\Debug\net6.0\ref\Deck.dll
