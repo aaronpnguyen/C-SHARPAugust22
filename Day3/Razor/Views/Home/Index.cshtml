@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor</title>
+</head>
+<body>
+
+    <h1>Here are some delicious foods!</h1>
+    @{
+        List<string> foods = new List<string>(){
+            "Apple Pie", "Burritos", "Clams Casino", "Donuts"
+        };
+
+        foreach(string food in foods)
+        {
+            if (food.ToLower()[0] == 'c')
+            {   
+                Console.WriteLine("this is true for " + food);
+                <h3 style="color: red;">@food</h3>
+            }
+            else
+            {
+                <h3>@food</h3>
+            }
+        }
+    }
+</body>
+</html>
