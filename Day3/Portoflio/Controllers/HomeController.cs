@@ -10,11 +10,11 @@ public class HomeController: Controller
     [HttpGet("/projects")]
     public string Projects()
     {
-        return "This is my projects!";
+        return "This is my projects";
     }
     [HttpGet("/contacts")]
     public string Contacts()
     {
-        return "This is my contacts!";
+        return "This is my Contacts!";
     }
 }

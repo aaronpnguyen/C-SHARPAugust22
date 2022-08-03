@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="~/css/styles.css">
+<h1>Hekxd</h1>
+
+<a href="/videos">Videos</a>
+
+@{
+    string helloWorld = "Hello World";
+    List<int> ints = new List<int>(){
+        1, 2, 3, 4, 5
+    };
+
+    foreach (int num in ints)
+    {
+        <h3>@num</h3>
+    }
+    <h4>@helloWorld</h4>
+}
