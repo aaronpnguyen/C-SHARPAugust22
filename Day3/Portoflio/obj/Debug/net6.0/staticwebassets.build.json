@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "/xP3PGPnAUJX3HyR3FU0RkfCSmvijF+0G9MRT091u6M=",
+  "Hash": "J9xmdAhsPKfBfaoQVxMNij7SGq/00hffJGy2wBBXxRM=",
   "Source": "Portoflio",
   "BasePath": "_content/Portoflio",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Portoflio\\wwwroot",
+      "Source": "Portoflio",
+      "ContentRoot": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\",
+      "BasePath": "_content/Portoflio",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\images\\Blah.gif",
+      "SourceId": "Portoflio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\",
+      "BasePath": "_content/Portoflio",
+      "RelativePath": "images/Blah.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Blah.gif"
+    },
+    {
+      "Identity": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\images\\horimiya.png",
+      "SourceId": "Portoflio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\",
+      "BasePath": "_content/Portoflio",
+      "RelativePath": "images/horimiya.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\horimiya.png"
+    },
+    {
+      "Identity": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\styles\\index.css",
+      "SourceId": "Portoflio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\",
+      "BasePath": "_content/Portoflio",
+      "RelativePath": "styles/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles\\index.css"
+    },
+    {
+      "Identity": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\styles\\project.css",
+      "SourceId": "Portoflio",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Coding Dojo\\Bootcamp\\C#\\Day3\\Portoflio\\wwwroot\\",
+      "BasePath": "_content/Portoflio",
+      "RelativePath": "styles/project.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles\\project.css"
+    }
+  ]
 }

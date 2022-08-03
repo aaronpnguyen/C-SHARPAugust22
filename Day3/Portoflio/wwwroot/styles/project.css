@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.bodyContainer {
+    margin: 0 auto;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+}

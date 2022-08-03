@@ -19,3 +19,6 @@ D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\obj\Debug\net6.0\refint\Portoflio.dll
 D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\obj\Debug\net6.0\Portoflio.pdb
 D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\obj\Debug\net6.0\Portoflio.genruntimeconfig.cache
 D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\obj\Debug\net6.0\ref\Portoflio.dll
+D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\obj\Debug\net6.0\Portoflio.RazorAssemblyInfo.cache
+D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\obj\Debug\net6.0\Portoflio.RazorAssemblyInfo.cs
+D:\Coding Dojo\Bootcamp\C#\Day3\Portoflio\bin\Debug\net6.0\Portoflio.staticwebassets.runtime.json
