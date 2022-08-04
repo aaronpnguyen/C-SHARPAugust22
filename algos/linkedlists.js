@@ -43,6 +43,81 @@ class SinglyLinkedList {
     }
 
     /**
+     * Retrieves the data of the second to last node in this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @returns {any} The data of the second to last node or null if there is no
+     *    second to last node.
+     */
+    secondToLast() {
+        let current = this.head;
+        if (current.data == null) { // If there is nothing return null
+            return current.data
+        }
+        while (current.next) { // Check for if there is only 1?
+            if (!current.next.next) {
+                return current.data;
+            }
+            current = current.next;
+        }
+        return null
+    }
+
+    /**
+     * Removes the node that has the matching given val as it's data.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {any} val The value to compare to the node's data to find the
+     *    node to be removed.
+     * @returns {boolean} Indicates if a node was removed or not.
+     */
+    removeVal(val) {
+        let current = this.head;
+        let temp = current;
+        while (current.next) {
+            temp = current;
+            current = current.next;
+            if (current.data == val) {
+                break;
+            }
+        }
+        if (current.data == val) {
+            temp.next = current.next;
+            return true;
+        }
+        return false;
+    }
+
+    // EXTRA
+    /**
+     * Inserts a new node before a node that has the given value as its data.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {any} newVal The value to use for the new node that is being added.
+     * @param {any} targetVal The value to use to find the node that the newVal
+     *    should be inserted in front of.
+     * @returns {boolean} To indicate whether the node was pre-pended or not.
+     */
+    prepend(newVal, targetVal) {
+        let newNode = new ListNode(newVal);
+        let current = this.head;
+        let temp = current;
+        while (current.next) {
+            temp = current;
+            current = current.next;
+            if (current.data == targetVal) {
+                break;
+            }
+        }
+        if (current.data == targetVal) {
+            temp.next = newNode;
+            newNode.next = current;
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * Removes the last node of this list.
      * - Time: O(?).
      * - Space: O(?).
@@ -70,14 +145,14 @@ class SinglyLinkedList {
     }
 
     /**
-       * Determines whether or not the given search value exists in this list.
-       * - Time: O(?).
-       * - Space: O(?).
-       * @param {any} val The data to search for in the nodes of this list.
-       * @param {?ListNode} current The current node during the traversal of this list
-       *    or null when the end of the list has been reached.
-       * @returns {boolean}
-       */
+     * Determines whether or not the given search value exists in this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {any} val The data to search for in the nodes of this list.
+     * @param {?ListNode} current The current node during the traversal of this list
+     *    or null when the end of the list has been reached.
+     * @returns {boolean}
+     */
     containsRecursive(val, current = this.head) {
         if (current.data == val) {
             return true
@@ -205,18 +280,14 @@ class SinglyLinkedList {
     */
     insertAtBack(data) {
         const newBack = new ListNode(data);
-
         if (this.isEmpty()) {
             this.head = newBack;
             return this;
         }
-
         let runner = this.head;
-
         while (runner.next !== null) {
             runner = runner.next;
         }
-
         runner.next = newBack;
         return this;
     }
@@ -236,7 +307,6 @@ class SinglyLinkedList {
             this.head = new ListNode(data);
             return this;
         }
-
         if (runner.next === null) {
             runner.next = new ListNode(data);
             return this;
@@ -285,13 +355,19 @@ const emptyList = new SinglyLinkedList();
 
 // const singleNodeList = new SinglyLinkedList().insertAtBackMany([1]);
 // const biNodeList = new SinglyLinkedList().insertAtBackMany([1, 2]);
-// const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 3]);
-const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6, -15, 0]).insertAtFront(5).average();
+const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 69, 420, 3]);
+// const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6, -15, 0]);
 // const unorderedList = new SinglyLinkedList().insertAtBackMany([
 //   -5, -10, 4, -3, 6, 1, -7, -2,
 // ]);
 
-console.log(secondThreeList);
+console.log(firstThreeList.secondToLast());
+console.log(firstThreeList.toArr());
+console.log(firstThreeList.removeVal(42069));
+console.log(firstThreeList.toArr());
+console.log(firstThreeList.prepend(999, 2))
+console.log(firstThreeList.toArr());
+console.log(firstThreeList.lengthOfList())
 
 /* node 4 connects to node 1, back to head */
 // const perfectLoopList = new SinglyLinkedList().insertAtBackMany([1, 2, 3, 4]);
