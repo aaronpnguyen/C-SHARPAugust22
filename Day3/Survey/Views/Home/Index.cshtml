@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="submit" method="post">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="Name">
+        </div>
+        <div>
+            <label for="location">Location: </label>
+            <select name="locations">
+                <option value="San Jose">San Jose</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Arlington">Arlington</option>
+            </select>
+        </div>
+        <div>
+            <label for="language">Favorite Language: </label>
+            <select name="language">
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="HTML">HTML</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment">Comment (optional):</label>
+            <br>
+            <textarea name="comment" placeholder="Comment!"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
