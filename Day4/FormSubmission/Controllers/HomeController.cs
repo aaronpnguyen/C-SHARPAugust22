@@ -13,7 +13,13 @@ public class HomeController: Controller
     [HttpPost("user/create")]
     public IActionResult Create(User user)
     {
-        if (ModelState.IsValid) return RedirectToAction("SomeAction");
+        if (ModelState.IsValid) return RedirectToAction("Submit");
         return View("Index");
+    }
+
+    [HttpGet("/submit")]
+    public IActionResult Submit()
+    {
+        return View("Submit");
     }
 }

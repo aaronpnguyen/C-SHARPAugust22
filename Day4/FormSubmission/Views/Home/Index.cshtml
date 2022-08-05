@@ -11,10 +11,24 @@
     <form asp-action="Create" asp-controller="Home" method="post">
         <div>
             <div class="validation">
-                <span asp-validation-for="Username" style="color: red;"></span>
+                <span asp-validation-for="FirstName" style="color: red;"></span>
             </div>
-            <label asp-for="Username"></label>
-            <input asp-for="Username">    
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName">    
+        </div>
+        <div>
+            <div class="validation">
+                <span asp-validation-for="LastName" style="color: red;"></span>
+            </div>
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName">    
+        </div>
+        <div>
+            <div class="validation">
+                <span asp-validation-for="Age" style="color: red;"></span>
+            </div>
+            <label asp-for="Age"></label>
+            <input asp-for="Age">    
         </div>
         <div>
             <div class="validation">
