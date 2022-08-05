@@ -1,0 +1,55 @@
+﻿@model User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <form asp-action="Create" asp-controller="Home" method="post">
+        <div>
+            <div class="validation">
+                <span asp-validation-for="Name" style="color: red;"></span>
+            </div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name">    
+        </div>
+        <div>
+            <div class="validation">
+                <span asp-validation-for="Locations" style="color: red;"></span>
+            </div>
+            <label asp-for="Locations"></label>
+            <select name="Locations">
+                <option value="San Jose">San Jose</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Arlington">Arlington</option>
+            </select>   
+        </div>
+        <div>
+            <div class="validation">
+                <span asp-validation-for="Language" style="color: red;"></span>
+            </div>
+            <label asp-for="Language"></label>
+            <select name="Language">
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="HTML">HTML</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>
+        <div>
+            <div class="validation">
+                <span asp-validation-for="Comment" style="color: red;"></span>
+            </div>
+            <label asp-for="Comment"></label><br>
+            <textarea name="Comment"></textarea>
+        </div>
+        <input value="Add User" type="submit">    
+    </form>
+</body>
+</html>
