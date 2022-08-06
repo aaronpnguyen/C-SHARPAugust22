@@ -1,0 +1,9 @@
+﻿@using Microsoft.AspNetCore.Http
+@model Passcode;
+
+<h1>Passcode #@Context.Session.GetInt32("visits")</h1>
+
+<h1>@Model.createPassword()</h1>
+<form action="/generate" method="post">
+    <button>Generate New Password</button>
+</form>
