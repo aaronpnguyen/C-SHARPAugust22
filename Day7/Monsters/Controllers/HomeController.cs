@@ -20,8 +20,8 @@ public class HomeController: Controller
         // Get all Monsters
         ViewBag.AllUsers = _context.Monsters.ToList();
     
-         // Get Monsters with the LastName "Jefferson"
-         ViewBag.Jeffersons = _context.Monsters
+         // Get Monsters with the LastName "Aaron"
+         ViewBag.Aarons = _context.Monsters
             .Where(u => u.Name == "Aaron");
  
     	// Get the 5 most recently added Monsters
