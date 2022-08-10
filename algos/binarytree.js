@@ -44,7 +44,9 @@ class BinarySearchTree {
      * - Space: O(?).
      * @returns {boolean} Indicates if this tree is empty.
      */
-    isEmpty() {}
+    isEmpty() {
+      return this.root == null;
+    }
   
     /**
      * Retrieves the smallest integer data from this tree.
@@ -54,7 +56,15 @@ class BinarySearchTree {
      *    the tree is being traversed.
      * @returns {number} The smallest integer from this tree.
      */
-    min(current = this.root) {}
+    min(current = this.root) {
+      if (this.isEmpty()) {
+        return null;
+      }
+      while (current.left) {
+        current = current.left;
+      }
+      return current.data;
+    }
   
     /**
      * Retrieves the smallest integer data from this tree.
@@ -64,7 +74,11 @@ class BinarySearchTree {
      *    the tree is being traversed.
      * @returns {number} The smallest integer from this tree.
      */
-    minRecursive(current = this.root) {}
+    minRecursive(current = this.root) {
+      if (current === null) return null;
+      if (current.left === null) return current.data;
+      return this.minRecursive(current.left);
+    }
   
     /**
      * Retrieves the largest integer data from this tree.
@@ -74,7 +88,15 @@ class BinarySearchTree {
      *    the tree is being traversed.
      * @returns {number} The largest integer from this tree.
      */
-    max(current = this.root) {}
+    max(current = this.root) {
+      if (this.isEmpty()) {
+        return null;
+      }
+      while (current.right) {
+        current = current.right;
+      }
+      return current.data;
+    }
   
     /**
      * Retrieves the largest integer data from this tree.
@@ -84,7 +106,50 @@ class BinarySearchTree {
      *    the tree is being traversed.
      * @returns {number} The largest integer from this tree.
      */
-    maxRecursive(current = this.root) {}
+    maxRecursive(current = this.root) {
+      if (current === null) return null;
+      if (current.right === null) return current.data;
+      return this.maxRecursive(current.right);
+    }
+
+contains(searchVal) {
+  if (this.isEmpty()) {
+    return false;
+  }
+  let current = this.root;
+  while (current) {
+    if (current.data == searchVal) return true;
+    else if (searchVal < current.data) current = current.left;
+    else current = current.right;
+  }
+  return false;
+}
+
+containsRecursive(searchVal, current = this.root) {
+  if (this.isEmpty() || current == null) {
+    return false;
+  }
+  if (current.data === searchVal) return true;
+  if (searchVal < current.data) return this.containsRecursive(searchVal, current.left);
+  if (searchVal > current.data) return this.containsRecursive(searchVal, current.right);
+}
+
+    // insert(newVal) {
+    //   let newNode = new BSTNode(newVal);
+    //   let current = this.root;
+    //   if (this.isEmpty()) {
+    //     this.root = newNode;
+    //     return this.root;
+    //   }
+    //   while (current.data != null) {
+    //     if (newVal > current.data) {
+    //       current = current.right;
+    //     } else {
+    //       current = current.left;
+    //     }
+    //   }
+    //   return current = newNode;
+    // }
   
     // Logs this tree horizontally with the root on the left.
     print(node = this.root, spaceCnt = 0, spaceIncr = 10) {
@@ -134,7 +199,7 @@ threeLevelTree.root.left.left = new BSTNode(2);
 threeLevelTree.root.left.right = new BSTNode(6);
 threeLevelTree.root.right = new BSTNode(15);
 threeLevelTree.root.right.left = new BSTNode(13);
-
+console.log(threeLevelTree.containsRecursive(2));
 /* fullTree
                     root
                 <-- 25 -->
@@ -146,20 +211,21 @@ threeLevelTree.root.right.left = new BSTNode(13);
     4    12  18  24  31  44 66  90
 */
 /***************** Uncomment after insert method is created. ****************/
-// const fullTree = new BinarySearchTree();
+const fullTree = new BinarySearchTree();
 // fullTree
-//   .insert(25)
-//   .insert(15)
-//   .insert(10)
-//   .insert(22)
-//   .insert(4)
-//   .insert(12)
-//   .insert(18)
-//   .insert(24)
-//   .insert(50)
-//   .insert(35)
-//   .insert(70)
-//   .insert(31)
-//   .insert(44)
-//   .insert(66)
-//   .insert(90);
+  // .insert(25)
+  // .insert(15)
+  // .insert(10)
+  // .insert(22)
+  // .insert(4)
+  // .insert(12)
+  // .insert(18)
+  // .insert(24)
+  // .insert(50)
+  // .insert(35)
+  // .insert(70)
+  // .insert(31)
+  // .insert(44)
+  // .insert(66)
+  // .insert(90);
+// fullTree.print();
