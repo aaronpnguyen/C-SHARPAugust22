@@ -1,0 +1,16 @@
+@model Dish
+
+<h1>@Model.DishName</h1>
+<h3>@Model.ChefName</h3>
+<h3>@Model.Description</h3>
+<h4>Calories: @Model.Calories</h4>
+<h4>Tastiness: @Model.Tastiness</h4>
+<span>
+    <a href="/dish/update/@Model.DishId">Edit</a>
+    <form asp-controller="Dishes"
+        asp-action="DeleteDish"
+        asp-route-deleteId="@Model.DishId"
+        method="post">
+        <button>Delete</button>
+    </form> 
+</span>

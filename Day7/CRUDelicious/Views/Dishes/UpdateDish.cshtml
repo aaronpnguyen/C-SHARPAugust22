@@ -1,0 +1,37 @@
+@model Dish
+
+<form asp-controller="Dishes" asp-action="SubmitUpdate" asp-route-updateId="@Model.DishId" method="post">
+    <div>
+        <label asp-for="ChefName"></label>
+        <span style="color: red;" asp-validation-for="ChefName"></span>
+        <input asp-for="ChefName" value="@Model.ChefName">
+    </div>
+    <div>
+        <label asp-for="DishName"></label>
+        <span style="color: red;" asp-validation-for="DishName"></span>
+        <input asp-for="DishName" value="@Model.DishName">
+    </div>
+    <div>
+        <label asp-for="Calories"></label>
+        <span style="color: red;" asp-validation-for="Calories"></span>
+        <input type="number" asp-for="Calories" value="@Model.Calories">
+    </div>
+    <div>
+        <label asp-for="Tastiness"></label>
+        <span style="color: red;" asp-validation-for="Tastiness"></span>
+        <select asp-for="Tastiness" value="@Model.Tastiness">
+            <option value="Select">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <span style="color: red;" asp-validation-for="Description"></span>
+        <textarea asp-for="Description">@Model.Description</textarea>
+    </div>
+    <button>Submit</button>
+</form>

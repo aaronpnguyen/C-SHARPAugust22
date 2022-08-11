@@ -1,0 +1,16 @@
+@model List<Dish>
+
+<h1>Welcome to CRUDelicious</h1>
+<a href="/create/dish">Add a dish!</a>
+
+@foreach (Dish dish in Model)
+{
+    <div>
+        <h1><a asp-controller="Dishes"
+            asp-action="ViewDish"
+            asp-route-dishId="@dish.DishId">
+            @dish.DishName</a> 
+            by @dish.ChefName
+        </h1>
+    </div>
+}
