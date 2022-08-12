@@ -1,0 +1,24 @@
+@model User
+
+<form>
+    <div>
+        <label asp-for="FirstName"></label>
+        <span style="color: red;" asp-validation-for="FirstName"></span>
+        <input asp-for="FirstName">
+    </div>
+    <div>
+        <label asp-for="LastName"></label>
+        <span style="color: red;" asp-validation-for="LastName"></span>
+        <input asp-for="LastName">
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <span style="color: red;" asp-validation-for="Email"></span>
+        <input asp-for="Email">
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <span style="color: red;" asp-validation-for="Password"></span>
+        <input asp-for="Password">
+    </div>
+</form>
