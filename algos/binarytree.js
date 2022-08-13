@@ -56,6 +56,16 @@ class BinarySearchTree {
     return this;
   }
 
+  toArrLevelOrder(current = this.root, vals = []) {
+    if (current) {
+      if (current.left && current.right) {
+        vals.push(this.toArrInorder(current.left, vals))
+        vals.push(this.toArrInorder(current.right, vals))
+      }
+    }
+    return vals;
+  }
+
   /**
    * DFS Inorder: (Left, CurrNode, Right)
    * Converts this BST into an array following Depth First Search inorder.
@@ -375,20 +385,22 @@ threeLevelTree.root.right.left = new BSTNode(13);
   4    12  18  24   31  44 66  90
 */
 /***************** Uncomment after insert method is created. ****************/
-// const fullTree = new BinarySearchTree();
-// fullTree
-//   .insert(25)
-//   .insert(15)
-//   .insert(10)
-//   .insert(22)
-//   .insert(4)
-//   .insert(12)
-//   .insert(18)
-//   .insert(24)
-//   .insert(50)
-//   .insert(35)
-//   .insert(70)
-//   .insert(31)
-//   .insert(44)
-//   .insert(66)
-//   .insert(90);
+const fullTree = new BinarySearchTree();
+fullTree
+  .insert(25)
+  .insert(15)
+  .insert(10)
+  .insert(22)
+  .insert(4)
+  .insert(12)
+  .insert(18)
+  .insert(24)
+  .insert(50)
+  .insert(35)
+  .insert(70)
+  .insert(31)
+  .insert(44)
+  .insert(66)
+  .insert(90);
+
+  console.log(fullTree.toArrLevelOrder());
