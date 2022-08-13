@@ -57,6 +57,7 @@ public class DishesController: Controller
         if (!ModelState.IsValid) return UpdateDish(updateId);
         Dish? dish = DATABASE.Dishes.FirstOrDefault(dish => dish.DishId == updateId);
         if (dish == null) return AllDishes();
+        
         dish.ChefName = UpdatedDish.ChefName;
         dish.DishName = UpdatedDish.DishName;
         dish.Calories = UpdatedDish.Calories;
