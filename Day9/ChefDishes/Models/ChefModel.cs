@@ -32,4 +32,9 @@ public class Chef
     {
         return $"{FirstName} {LastName}";
     }
+
+    public int Age()
+    {
+        return DateTime.Now.Year - DoB.Year;
+    }
 }

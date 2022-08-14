@@ -1,0 +1,29 @@
+@model Chef
+
+<a href="/">Home</a>
+<form asp-controller="Chef" asp-action="SubmitNew" method="post">
+    <div>
+        <div class="validations">
+            <label asp-for="FirstName"></label>
+            <span style="color: red;" asp-validation-for="FirstName"></span>
+        </div>
+        <input asp-for="FirstName">
+    </div>
+    
+    <div>
+        <div class="validations">
+            <label asp-for="LastName"></label>
+            <span style="color: red;" asp-validation-for="LastName"></span>
+        </div>
+        <input asp-for="LastName">
+    </div>
+    
+    <div>
+        <div class="validations">
+            <label asp-for="DoB"></label>
+            <span style="color: red;" asp-validation-for="DoB"></span>
+        </div>
+        <input type="Date" asp-for="DoB">
+    </div>
+    <button>Submit</button>
+</form>

@@ -1,0 +1,26 @@
+@model List<Dish>
+
+<h1><a href="/">All da hekkin chefs</a> | All da hekkin dishes</h1>
+<a href="/add/dish">Add a dish!</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Dish dish in Model)
+        {
+            <tr>
+                <td>@dish.DishName</td>
+                <td>@dish.Sous.FullName()</td>
+                <td>@dish.Tastiness</td>
+                <td>@dish.Calories</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -26,6 +26,7 @@ public class Dish
     public string Description {get;set;}
 
     [Required(ErrorMessage = "is required")]
+    [Display(Name = "Chef")]
     public int ChefId {get;set;}
 
     public DateTime CreatedAt {get;set;} = DateTime.Now;

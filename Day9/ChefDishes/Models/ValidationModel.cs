@@ -9,9 +9,9 @@ public class OfAge: ValidationAttribute
     {   
         int current = DateTime.Now.Year; // Gets current year
         DateTime given = (DateTime)value; // Unbox given value to year
-        int age = given.Year - current; // Subtract given.year - current.year
+        int age = current - given.Year; // Subtract current.year - given.year
         if (age < 18)
-            return new ValidationResult("ur a yungin");
+            return new ValidationResult("must be at least 18 years old");
         return ValidationResult.Success;
     }
 }
