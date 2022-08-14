@@ -1,0 +1,6 @@
+<a href="/categories">Categories</a>
+<partial name="_Form"></partial>
+
+@foreach(Product item in ViewBag.AllProducts){
+    <a href="/products/@item.ProductId">@item.ProductName</a>
+}

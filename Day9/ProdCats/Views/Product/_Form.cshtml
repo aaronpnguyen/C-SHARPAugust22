@@ -1,0 +1,31 @@
+@model Product
+
+<h1>Prod</h1>
+
+<a href="/products">Home</a>
+<form asp-controller="Product" asp-action="SubmitNew" method="post">
+    <div>
+        <div class="validations">
+            <label asp-for="ProductName"></label>
+            <span style="color: red;" asp-validation-for="ProductName"></span>
+        </div>
+        <input asp-for="ProductName">
+    </div>
+    
+    <div>
+        <div class="validations">
+            <label asp-for="Description"></label>
+            <span style="color: red;" asp-validation-for="Description"></span>
+        </div>
+        <input asp-for="Description">
+    </div>
+    
+    <div>
+        <div class="validations">
+            <label asp-for="Price"></label>
+            <span style="color: red;" asp-validation-for="Price"></span>
+        </div>
+        <input type="number" asp-for="Price">
+    </div>
+    <button>Submit</button>
+</form>

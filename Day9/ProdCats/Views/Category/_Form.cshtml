@@ -1,0 +1,15 @@
+@model Category
+
+<h1>Cats</h1>
+
+<a href="/categories">Home</a>
+<form asp-controller="Category" asp-action="SubmitCategory" method="post">
+    <div>
+        <div class="validations">
+            <label asp-for="CategoryName"></label>
+            <span style="color: red;" asp-validation-for="CategoryName"></span>
+        </div>
+        <input asp-for="CategoryName">
+    </div>
+    <button>Submit</button>
+</form>

@@ -1,0 +1,8 @@
+@model Connection
+
+@* <h1>hekin @Model.CategoryName</h1> *@
+
+@foreach(Connection item in @ViewBag.available)
+{
+    <h3>@item.Product.ProductName</h3>
+}

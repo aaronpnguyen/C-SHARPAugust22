@@ -1,0 +1,5 @@
+<partial name="_Form"></partial>
+
+@foreach(Category item in ViewBag.AllCategories){
+    <a href="/category/@item.CategoryId">@item.CategoryName</a>
+}
