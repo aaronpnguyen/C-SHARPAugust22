@@ -1,6 +1,6 @@
 <ul>
-    @foreach(Product item in ViewBag.notProducts)
+    @foreach(Connection item in ViewBag.cat.Connections)
     {
-        <li>@item.ProductName</li>
+        <li>@item.Product.ProductName</li>
     }
 </ul>

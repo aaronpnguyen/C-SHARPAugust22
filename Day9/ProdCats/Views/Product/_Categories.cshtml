@@ -1,6 +1,7 @@
+@model Connection
 <ul>
-    @foreach(Category item in ViewBag.notCategories)
+    @foreach(Connection item in ViewBag.prod.Connections)
     {
-        <li>@item.CategoryName</li>
+        <li>@item.Category.CategoryName</li>
     }
 </ul>

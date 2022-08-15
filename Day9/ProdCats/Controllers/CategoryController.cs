@@ -40,26 +40,14 @@ public class CategoryController: Controller
             .FirstOrDefault(category => category.CategoryId == id);
         if (category == null) return Categories();
 
-        // List<Category> notIn = DATABASE.Categories
-        //     .Include(category => category.Connections)
-        //     .ThenInclude(connection => connection.Product)
-        //     .Where(category => category.CategoryId != id)
-        //     .ToList();
-        // Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-        // Console.WriteLine(notIn.Count());
-        // Console.WriteLine(notIn[0].Connections[1].Product?.ProductName);
-
-        List<Product> allProducts = DATABASE.Products.ToList();
-        List<Product> notProducts = new List<Product>();
-        foreach(Connection item in category.Connections)
-        {
-            notProducts.Add(item.Product);
-        }
+        List<Product> ProdNotIn = DATABASE.Products
+            .Include(product => product.Connections)
+            .Where(product => !product.Connections
+                .Any(category => category.CategoryId == id))
+            .ToList();
         
-        List<Product> available = allProducts.Except(notProducts).ToList();
-        ViewBag.available = available;
-        ViewBag.notProducts = notProducts;
         ViewBag.cat = category;
+        ViewBag.ProdNotIn = ProdNotIn;
         return View("ViewOne");
     }
 

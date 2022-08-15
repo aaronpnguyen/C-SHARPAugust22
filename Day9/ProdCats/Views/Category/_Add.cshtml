@@ -2,7 +2,7 @@
 <form asp-controller="Category" asp-action="Combine" asp-route-id="@ViewBag.cat.CategoryId" method="post">
     <select asp-for="ProductId">
         <option value="">Select</option>
-        @foreach(Product item in @ViewBag.available)
+        @foreach(Product item in @ViewBag.ProdNotIn)
         {   
             <option value="@item.ProductId">@item.ProductName</option>
         }

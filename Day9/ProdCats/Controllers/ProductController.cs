@@ -44,19 +44,17 @@ public class ProductController: Controller
             .Include(product => product.Connections)
             .ThenInclude(connection => connection.Category)
             .FirstOrDefault(product => product.ProductId == id);
-        if (product == null) return Products();
 
-        List<Category> allCategories = DATABASE.Categories.ToList();
-        List<Category> notCategories = new List<Category>();
-        foreach(Connection item in product.Connections)
-        {
-            notCategories.Add(item.Category);
-        }
+        if (product == null) return Products();
         
-        List<Category> available = allCategories.Except(notCategories).ToList();
-        ViewBag.available = available;
-        ViewBag.notCategories = notCategories;
+        List<Category> CatNotIn = DATABASE.Categories
+            .Include(category => category.Connections)
+            .Where(category => !category.Connections
+                .Any(product => product.ProductId == id))
+            .ToList();
+        
         ViewBag.prod = product;
+        ViewBag.CatNotIn = CatNotIn;
         return View("ViewOne");
     }
 
