@@ -1,8 +1,6 @@
-@model Connection
+<h1>Category: @ViewBag.cat.CategoryName</h1>
+<h3>Add Product</h3>
+<partial name="_Add"></partial>
 
-@* <h1>hekin @Model.CategoryName</h1> *@
-
-@foreach(Connection item in @ViewBag.available)
-{
-    <h3>@item.Product.ProductName</h3>
-}
+<h3>Products</h3>
+<partial name="_Products"></partial>

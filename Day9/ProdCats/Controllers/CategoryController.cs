@@ -32,7 +32,7 @@ public class CategoryController: Controller
     }
 
     [HttpGet("/category/{id}")]
-    public IActionResult OneProduct(int id)
+    public IActionResult OneCategory(int id)
     {
         Category? category = DATABASE.Categories
             .Include(category => category.Connections)
@@ -48,20 +48,28 @@ public class CategoryController: Controller
         // Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         // Console.WriteLine(notIn.Count());
         // Console.WriteLine(notIn[0].Connections[1].Product?.ProductName);
+
         List<Product> allProducts = DATABASE.Products.ToList();
         List<Product> notProducts = new List<Product>();
-        foreach(var item in category.Connections)
+        foreach(Connection item in category.Connections)
         {
             notProducts.Add(item.Product);
         }
         
         List<Product> available = allProducts.Except(notProducts).ToList();
         ViewBag.available = available;
-        Console.WriteLine("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
-        Console.WriteLine(available.Count());
-        Console.WriteLine(ViewBag.available[0].ProductName);
-        Console.WriteLine(available[1].ProductName);
-        Console.WriteLine(available[2].ProductName);
-        return View("ViewOne", category);
+        ViewBag.notProducts = notProducts;
+        ViewBag.cat = category;
+        return View("ViewOne");
+    }
+
+    [HttpPost("/add/product/category/{id}")]
+    public IActionResult Combine(int id, Connection product)
+    {
+        if (!ModelState.IsValid) return OneCategory(id);
+        product.CategoryId = id;
+        DATABASE.Connections.Add(product);
+        DATABASE.SaveChanges();
+        return OneCategory(id);
     }
 }

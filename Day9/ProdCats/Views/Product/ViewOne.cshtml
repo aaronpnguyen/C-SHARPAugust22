@@ -1,3 +1,8 @@
-@model Product
+<h1>successfully went to the view one</h1>
 
-<h1>hekin @Model.ProductName</h1>
+<h1>Product: @ViewBag.prod.ProductName</h1>
+<h3>Add Category</h3>
+<partial name="_Add"></partial>
+
+<h3>Products</h3>
+<partial name="_Categories"></partial>

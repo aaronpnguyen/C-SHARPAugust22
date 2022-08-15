@@ -1,0 +1,11 @@
+@model Connection
+<form asp-controller="Category" asp-action="Combine" asp-route-id="@ViewBag.cat.CategoryId" method="post">
+    <select asp-for="ProductId">
+        <option value="">Select</option>
+        @foreach(Product item in @ViewBag.available)
+        {   
+            <option value="@item.ProductId">@item.ProductName</option>
+        }
+    </select>
+    <button>Add</button>
+</form>

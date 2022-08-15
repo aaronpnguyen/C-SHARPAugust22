@@ -40,8 +40,33 @@ public class ProductController: Controller
     [HttpGet("/products/{id}")]
     public IActionResult OneProduct(int id)
     {
-        Product? product = DATABASE.Products.FirstOrDefault(product => product.ProductId == id);
+        Product? product = DATABASE.Products
+            .Include(product => product.Connections)
+            .ThenInclude(connection => connection.Category)
+            .FirstOrDefault(product => product.ProductId == id);
         if (product == null) return Products();
-        return View("ViewOne", product);
+
+        List<Category> allCategories = DATABASE.Categories.ToList();
+        List<Category> notCategories = new List<Category>();
+        foreach(Connection item in product.Connections)
+        {
+            notCategories.Add(item.Category);
+        }
+        
+        List<Category> available = allCategories.Except(notCategories).ToList();
+        ViewBag.available = available;
+        ViewBag.notCategories = notCategories;
+        ViewBag.prod = product;
+        return View("ViewOne");
+    }
+
+    [HttpPost("/add/category/product/{id}")]
+    public IActionResult Combine(int id, Connection category)
+    {
+        if (!ModelState.IsValid) return OneProduct(id);
+        category.ProductId = id;
+        DATABASE.Connections.Add(category);
+        DATABASE.SaveChanges();
+        return OneProduct(id);
     }
 }
