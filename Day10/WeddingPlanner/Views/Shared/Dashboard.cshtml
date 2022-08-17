@@ -1,3 +1,5 @@
+@model List<Wedding>
+
 <h1>Welcome to the Wedding Planner</h1>
 
 <table>
@@ -10,9 +12,37 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            
-        </tr>
+        @foreach (Wedding item in Model)
+        {
+            <tr>
+                <td><a style="text-decoration: none" href="/wedding/@item.WeddingId">@item.Names()</a></td>
+                <td>@item.Date.ToString("MMM dd, yyyy")</td>
+                <td>@item.Connections.Count</td>
+                @if (item.UserId == Context.Session.GetInt32("id"))
+                {
+                    <td>
+                        <form asp-controller="Wedding" asp-action="DeleteWedding" asp-route-id="@item.WeddingId" method="post">
+                            <button>Delete</button>
+                        </form>
+                    </td>
+                }
+                else if (item.Connections.Any(con => con.UserId == Context.Session.GetInt32("id")))
+                {   
+                    <td>
+                        <form asp-controller="Wedding" asp-action="UnRsvp" asp-route-WedId="@item.WeddingId" method="post">
+                            <button>UnRsvp</button>
+                        </form>
+                    </td>
+                } else
+                {
+                    <td>
+                        <form asp-controller="Wedding" asp-action="AddRsvp" asp-route-WedId="@item.WeddingId" method="post">
+                            <button>RSVP</button>
+                        </form>
+                    </td>
+                }
+            </tr>
+        }
     </tbody>
 </table>
 

@@ -91,7 +91,11 @@ public class UserController: Controller
     public IActionResult Dashboard()
     {
         if (notLogged) return RedirectToAction("LogReg");
-        return View("Dashboard");
+
+        List<Wedding> wedding = DATABASE.Weddings
+            .Include(wedding => wedding.Connections)
+            .ToList();
+        return View("Dashboard", wedding);
     }
 
     [HttpPost("/clear/id")]
