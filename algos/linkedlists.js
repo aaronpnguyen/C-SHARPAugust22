@@ -270,7 +270,7 @@ class SinglyLinkedList {
         return this.head === null;
     }
 
-    /**
+    /***
      * Creates a new node with the given data and inserts it at the back of
      * this list.
      * - Time: O(n) linear, n = length of list.
@@ -288,6 +288,7 @@ class SinglyLinkedList {
         while (runner.next !== null) {
             runner = runner.next;
         }
+        
         runner.next = newBack;
         return this;
     }
